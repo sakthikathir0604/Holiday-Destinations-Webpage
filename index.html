@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Icon</title>
+  <!-- Link to Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 300px;
+    }
+    .search-container input {
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+    .search-container i {
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" placeholder="Search...">
+  <i class="fas fa-search"></i>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Holidays</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0967be;
+        }
+        header {
+            /* background-image: url('travel-banner.jpg'); */
+             background-image: url(RRR.jpg);
+            background-size: cover;
+            color: rgba(244, 244, 249, 0.708);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1145ef;
+            padding: 10px;
+        }
+        nav a {
+            color: rgb(231, 234, 238);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            background-color: #0a0a0a;
+        }
+        .destinations, .packages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .destination, .package {
+            border: 1px solid #d9e7e8;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        .destination img, .package img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #0074d9;
+            color: rgb(246, 242, 243);
+            padding: 10px 0;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #e5ecec;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #0074d9;
+            color: rgb(252, 249, 249);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Dream Holidays</h1>
+    <p>Plan your perfect getaway with us!</p>
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="destinations">
+    <h2 style="color: whitesmoke;">Popular Destinations</h2>
+    <div class="destinations">
+        <div class="destination">
+            <img src="paris and France.jpg" alt="Paris">
+            <h3 style="color: whitesmoke">Paris, France</h3>
+            <p style="color:  whitesmoke";>Experience the City of Light</p>
+        </div>
+        <div class="destination">
+            <img src="maldives.jpg" alt="Maldives">
+            <h3 style="color: whitesmoke">Maldives</h3>
+            <p style="color: whitesmoke">Relax in paradise</p>
+        </div>
+        <div class="destination">
+            <img src="Japan.jpg" alt="Tokyo">
+            <h3 style="color: whitesmoke">Tokyo, Japan</h3>
+            <p style="color: whitesmoke">Explore the vibrant city</p>
+        </div>
+    </div>
+</section>
+
+<section id="packages">
+    <h2 style="color: whitesmoke">Holiday Packages</h2>
+    <div class="packages">
+        <div class="package">
+            <img src="beach.jpg" alt="Beach Holiday">
+            <h3 style="color: whitesmoke">Beach Escape</h3>
+            <p style="color: whitesmoke">Starting from RS.40000/- to RS.60000/- only</p>
+        </div>
+        <div class="package">
+            <img src="adventure.jpg" alt="Adventure">
+            <h3 style="color: whitesmoke">Adventure Getaway</h3>
+            <p style="color: whitesmoke">Starting from RS.50000/- to RS.80000/- only</p>
+        </div>
+        <div class="package">
+            <img src="luxury.jpg" alt="Luxury Retreat">
+            <h3 style="color: whitesmoke">Luxury Retreat</h3>
+            <p style="color: whitesmoke;">Starting from RS.75000/- to RS.150000/- only</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="color: whitesmoke;">Contact Us</h2>
+    <form action="submit-form" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Dream Holidays. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
